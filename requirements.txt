@@ -1,0 +1,16 @@
+langchain==0.0.330
+python-dotenv
+tiktoken
+faiss-cpu
+protobuf
+sentence-transformers==2.2.2
+InstructorEmbedding
+streamlit
+streamlit_chat
+sounddevice
+cython
+sentencepiece
+soundfile
+streamlit-audiorecorder
+ffmpeg-python
+google-generativeai
