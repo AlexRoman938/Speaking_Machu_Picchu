@@ -117,7 +117,13 @@ def generate_answer(audio):
         #Response question
         chain = get_model()
 
-        answer_guide = chain.run(text)
+        try:
+
+            answer_guide = chain.run(text)
+
+        except:
+
+            answer_guide = "Sorry. I don't understand"
 
         #Save conversation
         st.session_state.history.append({"message": text, "is_user": True})
