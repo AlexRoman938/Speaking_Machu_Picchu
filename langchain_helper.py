@@ -7,6 +7,8 @@ from langchain.memory import ConversationBufferMemory
 from langchain.prompts import PromptTemplate
 import os
 
+dotenv.load_dotenv()
+
 #Create Google Palm LLM model
 llm = GooglePalm(maxOutputTokens = 200)
 
@@ -18,8 +20,6 @@ vectordb_file_path = "macchu_picchu_vdb"
 
 def get_qa_chain():
     # Load the vector database from the local folder
-
-    dotenv.load_dotenv()
 
     vectordb = FAISS.load_local(vectordb_file_path, instructor_embeddings)
 
