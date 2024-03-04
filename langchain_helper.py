@@ -54,6 +54,3 @@ def get_qa_chain():
     
     return chain
 
-if __name__ == "__main__":
-
-    chain = get_qa_chain()
